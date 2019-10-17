@@ -1,0 +1,11 @@
+Resources:
+  SharedLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: shared-layer
+      ContentUri: src
+      CompatibleRuntimes:
+        - nodejs10.x
+Outputs:
+  LayerArn:
+    Value: !Ref SharedLayer
