@@ -16,6 +16,8 @@ Resources:
       Tracing: Active
       Policies:
         - AWSXrayWriteOnlyAccess
+      Layers:
+        - arn:aws:lambda:us-west-2:189519246275:layer:mjb-layer-name:1
   Function2:
     Type: AWS::Serverless::Function
     Properties:
@@ -31,6 +33,8 @@ Resources:
       Tracing: Active
       Policies:
         - AWSXrayWriteOnlyAccess
+      Layers:
+        - arn:aws:lambda:us-west-2:189519246275:layer:mjb-layer-name:1
 Parameters:
   StackTagName:
     Type: String
