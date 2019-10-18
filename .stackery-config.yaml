@@ -1,1 +1,2 @@
 stack-name: shared-layer-example
+strategy: local
